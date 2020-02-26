@@ -283,14 +283,24 @@ iframe {
     }
 
     /*========================================================================
-                                PROJECTS AND CONTACT GALLERIES DESKTOP
+                                DROP AND CONTACT GALLERIES DESKTOP
     EQUATION FOR RESPONSIVE WIDTH:
     100 - 0.3 (for the 3 images) -> 99.7 / 3 = 33.23333
     =======================================================================*/
     .responsive {
         padding: 10% 6px 0;
         float: left;
-        width: 33.23333%;
+       width: 33.23333%;
+    }
+
+    #drop {
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        width: 100%;
+        display: block;
+        height: auto;
     }
 
     .vroom {

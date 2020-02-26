@@ -63,7 +63,7 @@ h2 {
     text-transform: lowercase;
     line-height: 10px;
     font-size: 19px;
-    padding-bottom: 5px;
+    padding: 5px;
 }
 
 .text-center {
@@ -180,7 +180,7 @@ h2 {
     box-sizing: border-box;
 }
 
-.responsive { /*seems excessive*/
+.responsive { 
     width: 100%;
     padding-top: 10%;
 }
@@ -307,12 +307,15 @@ iframe {
     EQUATION FOR RESPONSIVE WIDTH:
     100 - 0.3 (for the 3 images) -> 99.7 / 3 = 33.23333
     =======================================================================*/
-    .responsive {
+    #shop .responsive, #contact.responsive { 
         padding: 10% 6px 0;
         float: left;
-       width: 33.23333%;
+        width: 33.23333%;
     }
 
+    .dennis, .frog, .dan {
+        width: 33%;
+    }    
 
 }
 

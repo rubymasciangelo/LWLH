@@ -189,7 +189,7 @@ h2 {
                                 SHOP
 =======================================================================*/
 
-.product {
+.product, .social-media {
     display: flex;
     justify-content: center;
     padding-bottom: 10px;
@@ -246,8 +246,8 @@ iframe {
         width: auto;
     }
 
-    .media {
-        display: flex;
+    .social-media {
+        display: flexbox;
         justify-content: center;
     }
 

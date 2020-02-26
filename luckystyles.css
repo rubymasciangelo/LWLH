@@ -70,12 +70,13 @@ h2 {
 	text-align: center;
 }
 
-.container {
+.container, .doll-container {
     padding-bottom: 10%;
 }
 
 .clearfix:after,
 .container:after,
+.doll-container:after,
 .navbar:after {
 	clear: both;
 	display: table;
@@ -231,7 +232,7 @@ iframe {
                                  OTHER
     =======================================================================*/
 
-    .container {
+    .container, .doll-container {
         padding: 5% 10%;
     }
 
@@ -307,15 +308,31 @@ iframe {
     EQUATION FOR RESPONSIVE WIDTH:
     100 - 0.3 (for the 3 images) -> 99.7 / 3 = 33.23333
     =======================================================================*/
-    #shop .responsive, #contact.responsive { 
+   #shop .responsive, #contact .responsive { 
         padding: 10% 6px 0;
         float: left;
         width: 33.23333%;
     }
 
-    .dennis, .frog, .dan {
-        width: 33%;
-    }    
+.doll-container {
+    padding-left: 5%;
+    display: block;
+}
+
+    .doll-one {
+        float: left;
+        clear: right;
+    }
+
+    .doll-two {
+        float: right;
+    }
+
+    .doll-three {
+        float: center;
+        width: 50%;
+        padding-left: 10vw;
+    }
 
 }
 

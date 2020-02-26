@@ -1,0 +1,322 @@
+/*========================================================
+	LUCKY WE LIVE HIGH
+==========================================================
+	GENERIC STYLES
+==========================================================
+    COLOR PALETTE
+    DARK GREEN:  #003333
+    TURQUOISE:   #99FFCC
+    NAV HOV: rgb(16, 243, 167) / #10F3A7
+    SHADOWS: 0 0 3px #00ff80, 0 0 5px #003333;
+    LIGHTEST TURQUOISE: #bbfce0
+========================================================*/
+@-ms-viewport {
+    width: extend-to-zoom;
+    zoom: 1.0;
+}
+
+@viewport {
+    zoom: 1.0;
+    width: extend-to-zoom;
+}
+
+html {
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-size: 62.5%;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+}
+
+body {
+	font-size: 18px;
+	margin: 0;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	line-height: 1.42857143;
+	color: rgb(1, 19, 3); 
+	background-color: hotpink;
+}
+
+.wrap {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+
+h1, h2 {
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 50px;
+    font-weight: 900;
+    font-size: 30px;
+    color:white;
+    border: 5px solid black;
+    background-color: black;
+    margin: 0;
+}
+
+h2 {
+    text-transform: lowercase;
+    line-height: 10px;
+    font-size: 19px;
+    padding-bottom: 5px;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.container {
+    padding-bottom: 10%;
+}
+
+.clearfix:after,
+.container:after,
+.navbar:after {
+	clear: both;
+	display: table;
+	content: " ";
+}
+
+/*========================================================================
+                                 NAVBAR
+    =======================================================================*/
+.navbar {
+    overflow: hidden;
+    /* background-color: #003333; */
+    height: 45px;
+    max-height: 50px;
+    display: block;
+    padding-top: 10px;
+}
+
+.navbar a {
+    color: black;
+    text-align: center;
+    padding: 16px 7px;
+    text-decoration: none;
+    font-size: 10px;
+}
+
+.navbar a:hover {
+    background-color: darkmagenta;
+    color: white;
+}
+
+.navbar-container {
+	max-height: 40px;
+    margin: 0% auto;
+    margin-top: 0px;
+	content: " ";
+	width: 100%;
+	position: fixed;
+	z-index: 100;
+	/* background-color: rgba(225,225,225,0.5); */
+}
+
+/*========================================================================
+                        HOME SECTION STYLES
+=======================================================================*/
+
+#home {
+        background: url(./images/deck.jpg) no-repeat;
+        width: calc(100vw-100px);
+        background-size: cover;
+        background-position: center;
+    }
+
+/*========================================================================
+                                DROP
+=======================================================================*/
+
+#drop {
+    padding-top: 0px;
+    background: url(./images/outside.jpg) no-repeat;
+    background-attachment: fixed;
+}
+
+
+
+div.description {
+    padding: 15px;
+    text-align: center;
+}
+
+.library, .spiders, .github, .linkdin {
+    width: 50%;
+    height: 50%;
+}
+
+.mail {
+    width: 75%;
+    height: 75%;
+}
+
+.library, .spiders, .github, .linkdin, .mail, .vroom {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.vroom {
+    width: 90%;
+    height: 90%;
+}
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive { /*seems excessive*/
+    width: 100%;
+    padding-top: 10%;
+}
+
+/*========================================================================
+                                ABOUT ME
+=======================================================================*/
+
+
+#aboutme {
+    background-color: whitesmoke;
+}
+
+/*========================================================================
+                                RESUME
+=======================================================================*/
+#resume {
+    background-color: #6be8aa;
+}
+
+iframe {
+    width: 100%;
+    height: 500px;
+}
+
+/*========================================================================
+                                TABLET 500px - 699px maybe make this higher depending on icons
+=======================================================================*/
+@media screen and (min-width: 500px) {
+
+    /*========================================================================
+                                 NAVBAR
+    =======================================================================*/
+    .navbar {
+        padding-top: 0;
+    }
+
+    .navbar a {
+        float: left;
+        padding: 14px 16px;
+        font-size: 17px;
+    }
+
+    /*========================================================================
+                                 OTHER
+    =======================================================================*/
+
+    .container {
+        padding: 5% 10%;
+    }
+
+    h1, h2 {
+        font-size: 40px;
+        color: #003333;
+        border: none;
+        background-color: transparent;
+    }
+
+    h2 {
+        font-size: 20px;
+        padding-top: 5px;
+    }
+
+    /*========================================================================
+                                RESUME
+    =======================================================================*/
+    iframe {
+        margin-top: 5%;
+    }
+}
+
+
+
+
+
+
+
+/*========================================================================
+                                DESKTOP 700px+
+=======================================================================*/
+
+@media screen and (min-width: 700px) {
+
+    #home {
+        background-attachment: fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        width: 100%;
+        display: block;
+        height: auto;
+        padding-top: 350px; /* space before main title logo */
+        padding-bottom: 500px; /* space after */
+    }
+    /*========================================================================
+                                DESKTOP GENERIC
+    =======================================================================*/
+
+    .container {
+        padding: 5% 23%;
+    }
+
+    h1, h2 {
+        text-align: left;
+    }
+
+    /*========================================================================
+                                PROJECTS AND CONTACT GALLERIES DESKTOP
+    EQUATION FOR RESPONSIVE WIDTH:
+    100 - 0.3 (for the 3 images) -> 99.7 / 3 = 33.23333
+    =======================================================================*/
+    .responsive {
+        padding: 10% 6px 0;
+        float: left;
+        width: 33.23333%;
+    }
+
+    .vroom {
+        width: 100%;
+        height: 100%;
+    }
+
+    .library, .spiders, .github, .linkdin, .mail, .vroom {
+        height: 100px;
+    }
+}
+
+
+/*========================================================================
+                      CHONK SCREENS 1400+ BIG BOI HOURS
+=======================================================================*/
+@media screen and (min-width: 1400px) {
+    .library, .spiders, .github, .linkdin {
+        width: 100px;
+    }
+
+    .vroom {
+        width: 212px;
+    }
+
+    .mail {
+        width: 150px;
+    }
+}

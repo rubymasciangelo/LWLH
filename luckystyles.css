@@ -169,6 +169,7 @@ h2 {
 
 .frog {
     width: 80vw;
+    padding-left: 10%;
 }
 
 .dan {
@@ -188,8 +189,15 @@ h2 {
                                 SHOP
 =======================================================================*/
 
+.product {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
 .description {
     color: whitesmoke;
+    text-align: center;
 }
 
 /*========================================================================
@@ -239,7 +247,8 @@ iframe {
     }
 
     .media {
-    justify-items: center;
+        display: flex;
+        justify-content: center;
     }
 
     /*========================================================================
